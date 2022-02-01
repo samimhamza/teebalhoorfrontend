@@ -1,0 +1,83 @@
+export default [
+  {
+    logo: "/icons/SYSTEM ICON/System Icone-03.svg",
+    color: "orange",
+    text: "Users Management Systems",
+    key: "user_management_system",
+    items: [
+      {
+        key: "user_list",
+        text: "Users List",
+        icon: "mdi-account-outline",
+        link: "/users",
+        exact: true,
+        scope: "users-view",
+      },
+      // {
+      //   key: 'menu.user_chart',
+      //   text: 'Users Chart',
+      //   icon: 'mdi-chart-bar',
+      //   link: '/users/charts',
+      //   exact: true,
+      //   scope: 'Users-View',
+      // },
+      {
+        icon: "mdi-account-group",
+        key: "team_list",
+        text: "Teams List",
+        link: "/users/teams",
+        exact: true,
+        scope: "teams-view",
+      },
+      {
+        icon: "mdi-shield-account",
+        key: "role_list",
+        text: "Roles List",
+        link: "/users/roles",
+        exact: true,
+        scope: "roles-view",
+      },
+      {
+        icon: "mdi-cog",
+        key: "settings",
+        text: "Settings",
+        scope: ["labels-view"],
+        items: [
+          {
+            icon: "mdi-svg",
+            key: "status_event_list",
+            text: "Status Event List",
+            link: "/status_management/status_event/user",
+            exact: true,
+            scope: "reasons-view",
+          },
+          {
+            icon: "mdi-head-question",
+            key: "reason_list",
+            text: "Reasons List",
+            link: "/status_management/reasons/user",
+            exact: true,
+            scope: "reasons-view",
+          },
+          {
+            icon: "mdi-shuffle",
+            key: "labels",
+            text: "Labels List",
+            link: "/labels/user",
+            exact: true,
+            scope: "labels-view",
+          },
+        ],
+      },
+
+      {
+        icon: "mdi-account-details",
+        key: "user_activity",
+        text: "Users Activity",
+        link: "/users/logs",
+        exact: true,
+        scope: "user_activity-view",
+      },
+    ],
+  },
+];
