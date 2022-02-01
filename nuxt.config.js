@@ -125,7 +125,7 @@ export default {
   },
 
   axios: {
-    baseURL: "http://teebalhoor2.code9ine.com/api/v1",
+    baseURL: "https://teebalhoor2.code9ine.com/api/v1",
     // baseURL: "http://localhost:8000/api/v1",
     //baseURL: "http://192.168.3.90:8000/api/v1",
     credentials: true,
